@@ -10,6 +10,8 @@ const App = () => {
 
   const dark = !light ? "dark" : '';
 
+  const handleClick = () => { setLight(!light); }
+
   return (
     <div className={`App ${dark}`}>
       <h1>Fancy Buttons</h1>
@@ -17,7 +19,7 @@ const App = () => {
       <section>
         <AngryButton anger={anger} setAnger={setAnger} />
         <CounterButton clickAmount={clickAmount} setClickAmount={setClickAmount} />
-        <LightSwitchButton light={light} setLight={setLight}/>
+        <LightSwitchButton light={light} setLight={handleClick}/>
         <TextRepeaterButton repetitions={repetitions} setRepetitions={setRepetitions} />
       </section>
     </div>
