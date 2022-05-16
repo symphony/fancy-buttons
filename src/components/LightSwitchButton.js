@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 const LightSwitchButton = ({light, setLight}) => {
   const handleClick = () => { setLight(!light); };
 

@@ -1,7 +1,4 @@
-import { useState } from "react";
-
-const CounterButton = (props) => {
-  const [clickAmount, setClickAmount] = useState(0);
+const CounterButton = ({clickAmount, setClickAmount}) => {
   const handleClick = () => { setClickAmount(clickAmount + 1); };
 
   return (
